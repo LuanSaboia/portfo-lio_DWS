@@ -58,6 +58,23 @@ header {
     padding: 70px 10% 0;
 }
 
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content span {
+    color: #0ef;
+}
+
+.home-img img {
+    max-width: 450px;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
