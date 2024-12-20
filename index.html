@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <a href="#" class="logo"><span>Port</span>folio.</a>
         <nav class="navbar">
-            <a class="active" href="#home">Home</a>
-            <a href="#work">Resume</a>
+            <a class="active" href="#">Home</a>
+            <a href="#resume">Resume</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contato">Contact</a>
         </nav>
@@ -20,9 +22,11 @@
     <section class="home">
         <div class="home-content">
             <h3>Olá, meu nome é</h3>
-            <h1>Luan</h1>
-            <h3>Oi aqui tem mais coisas <span>Teste color</span></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis sed dolorem saepe aperiam ut itaque temporibus quia ducimus, ipsum dicta veniam quis libero nulla magni explicabo eligendi corporis quas autem.</p>
+            <h3>Luan</h3>
+            <h1>Oi aqui tem mais coisas <span>Teste color</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis sed dolorem saepe aperiam ut itaque
+                temporibus quia ducimus, ipsum dicta veniam quis libero nulla magni explicabo eligendi corporis quas
+                autem.</p>
             <div class="social-media">
                 <a href="#"></a>
                 <a href="#"></a>
@@ -30,10 +34,10 @@
                 <a href="#"></a>
             </div>
         </div>
-        
-        <div class="home-img">
+
+        <!-- <div class="home-img">
             <img src="photo.jpg" alt="">
-        </div>
+        </div> -->
     </section>
 
     <!-- <section class="work">
@@ -43,38 +47,81 @@
     </section> -->
     <section id="resume">
         <h2>Resume</h2>
-    
+
         <!-- Informações Pessoais -->
         <div class="resume-section">
             <h3>Contato</h3>
             <p><strong>Endereço:</strong> Rua Dom Pedro II, 1400</p>
             <p><strong>Telefone:</strong> (88) 99342-8350</p>
             <p><strong>Email:</strong> <a href="mailto:luan.saboia@gmail.com">luan.saboia@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luan-bezerra" target="_blank">www.linkedin.com/in/luan-bezerra</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luan-bezerra"
+                    target="_blank">www.linkedin.com/in/luan-bezerra</a></p>
         </div>
-    
+
         <!-- Educação -->
+
         <div class="resume-section">
             <h3>Educação</h3>
             <ul>
-                <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade XYZ (2020-2024)</li>
-                <li><strong>Curso Técnico em Informática</strong> - Escola ABC (2018-2020)</li>
+                <div class="resume-section skills">
+                    <li><strong>Curso Técnico em Informática</strong> - EEEP Manoel Mano (2016-2018)</li>
+                    <ul class="list">
+                        <li>Programação</li>
+                    </ul>
+                </div>
+                <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade Federal do Ceará (2019)</li>
             </ul>
         </div>
-    
+
         <!-- Experiência Profissional -->
         <div class="resume-section">
             <h3>Experiência Profissional</h3>
-            <ul>
-                <li><strong>Desenvolvedor Frontend</strong> - Empresa Tech (2022-presente)
+            <div class="experience-item">
+                <p><strong>Estagiário de TI</strong> - Universidade Federal do Ceará</p>
+                <div class="details">
+                    <p class="desc">(ago de 2018 - dez de 2018)</p>
+                    Serviços realizados:
+                    <p>- Manunteção de computadores;</p>
+                    <p>- Serviços com rede de computadores (instalação de servidor, troca de cabos de rede,
+                        gerenciamento do servidor);</p>
+                    <p>- Manuseio do banco de dados do servidor via shell;</p>
+                    <p>- Virtualização de máquinas;</p>
+                    <p>- Operação de serviços de rede através do protocolo de rede SSH.</p>
                     <p>Desenvolvimento de interfaces responsivas utilizando React e Tailwind CSS.</p>
-                </li>
-                <li><strong>Estagiário em Desenvolvimento</strong> - Startup XYZ (2021-2022)
-                    <p>Colaboração em projetos de sistemas internos utilizando HTML, CSS e JavaScript.</p>
-                </li>
-            </ul>
+                </div>
+                <button class="btn-details">...ver mais</button>
+            </div>
+            <div class="experience-item">
+                <p><strong>Estagiário de TI</strong> - Universidade Federal do Ceará</p>
+                <div class="details">
+                    <p class="desc">(ago de 2018 - dez de 2018)</p>
+                    Serviços realizados:
+                    <p>- Manunteção de computadores;</p>
+                    <p>- Serviços com rede de computadores (instalação de servidor, troca de cabos de rede,
+                        gerenciamento do servidor);</p>
+                    <p>- Manuseio do banco de dados do servidor via shell;</p>
+                    <p>- Virtualização de máquinas;</p>
+                    <p>- Operação de serviços de rede através do protocolo de rede SSH.</p>
+                    <p>Desenvolvimento de interfaces responsivas utilizando React e Tailwind CSS.</p>
+                </div>
+                <button class="btn-details">...ver mais</button>
+            </div>
         </div>
-    
+        <!-- <div class="experience-item">
+            <h3>Estagiário de TI - Universidade Federal do Ceará</h3>
+            <p>ago de 2018 - dez de 2018 · 5 meses</p>
+            <div class="details">
+                <ul>
+                    <li>Manutenção de computadores;</li>
+                    <li>Serviços com rede de computadores (instalação de servidor, troca de cabos de rede, gerenciamento do servidor);</li>
+                    <li>Manuseio do banco de dados do servidor via shell;</li>
+                    <li>Virtualização de máquinas;</li>
+                    <li>Operação de serviços de rede através do protocolo SSH;</li>
+                </ul>
+            </div>
+            <button class="toggle-btn">Ver mais</button>
+        </div> -->
+
         <!-- Habilidades Técnicas -->
         <div class="resume-section">
             <h3>Habilidades Técnicas</h3>
@@ -86,7 +133,7 @@
                 <li>Git, GitHub</li>
             </ul>
         </div>
-    
+
         <!-- Projetos Relevantes -->
         <div class="resume-section">
             <h3>Projetos Relevantes</h3>
@@ -97,8 +144,10 @@
             </ul>
         </div>
     </section>
-    
+
     <main>
     </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
