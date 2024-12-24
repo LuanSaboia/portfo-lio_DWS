@@ -94,7 +94,17 @@ header {
     transform: scale(1.1);
 }
 
-/* Estilo Geral */
+.box-content {
+    display: flex; /* Padrão para telas grandes */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content-img img{
+    height: 48px;
+    width: 48px;
+}
+
 #resume {
     padding: 50px;
     background-color: #f9f9f9;
@@ -164,6 +174,7 @@ div.resume-section.skills .list li:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+    width: 390px;
 }
 
 .details {
@@ -192,6 +203,10 @@ div.resume-section.skills .list li:hover {
     border-radius: 5px;
 }
 
+.contact{
+    background-color: #1f242d;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -200,5 +215,20 @@ div.resume-section.skills .list li:hover {
 
     .shapes {
         flex-direction: column;
+    }
+
+    .box-content {
+        display: grid; /* Muda para grid em telas menores */
+        grid-template-columns: 1fr; /* Uma coluna */
+        gap: 10px;
+    }
+
+    .experience-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        max-width: 180px;
     }
 }
