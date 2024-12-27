@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 
 <body>
@@ -58,12 +61,12 @@
         <div class="resume-section">
             <h3>Educação</h3>
             <ul>
-                <div class="resume-section skills">
-                    <li><strong>Curso Técnico em Informática</strong> - EEEP Manoel Mano (2016-2018)</li>
+                <!-- <div class="resume-section skills">
                     <ul class="list">
                         <li>Programação</li>
                     </ul>
-                </div>
+                </div> -->
+                <li><strong>Curso Técnico em Informática</strong> - EEEP Manoel Mano (2016-2018)</li>
                 <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade Federal do Ceará (2019)</li>
             </ul>
         </div>
@@ -176,15 +179,39 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact-content">
-            <h3>aaaaaa</h3>
+            <h2>Contact</h2>
+    
+            <!-- Formulário de Contato -->
+            <form id="contact-form" class="contact-form">
+                <label for="from_name">Nome</label>
+                <input type="text" id="name" name="from_name" placeholder="Seu nome" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user_email" placeholder="Seu email" required>
+            
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+    
+            <!-- Links de Redes Sociais -->
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
         </div>
     </section>
+    
 
     <main>
     </main>
     <script src="script.js"></script>
+    
+    
 </body>
 
 </html>
