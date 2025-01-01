@@ -13,27 +13,35 @@ toggleButtons.forEach(button => {
     });
 });
 
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+        
+        navLinks.forEach(nav => nav.classList.remove("active"));
+
+        this.classList.add("active");
+    });
+});
+
 const form = document.querySelector('.contact-form');
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Evita o envio real do formulário
+    event.preventDefault();
 
     alert('Obrigado por entrar em contato! Responderei em breve.');
-    form.reset(); // Limpa os campos do formulário
+    form.reset();
 });
 
-// Inicialização do EmailJS com a Public Key
-emailjs.init("duZfPJZEZvIGRc38z"); // Substitua pela sua Public Key
+emailjs.init("duZfPJZEZvIGRc38z");
 
-// Evento de envio do formulário
 document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Previne o comportamento padrão do formulário
+    event.preventDefault(); 
 
-    // Envio do formulário usando `sendForm`
     emailjs.sendForm("service_fs3hsgq", "template_skz77dj", this)
         .then(() => {
             alert("Mensagem enviada com sucesso!");
-            document.getElementById("contact-form").reset(); // Limpa os campos
+            document.getElementById("contact-form").reset();
         }, (error) => {
             alert("Erro ao enviar a mensagem. Tente novamente.");
             console.error("Erro:", error);
