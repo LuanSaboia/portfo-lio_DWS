@@ -1,9 +1,11 @@
+/* RESET DE ESTILOS GERAIS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* CONFIGURAÇÕES GERAIS DO BODY */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -11,19 +13,22 @@ body {
     color: #fff;
 }
 
+/* CABEÇALHO FIXO E NAVEGAÇÃO */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
-    position: fixed;
+    padding: 20px 10%;
+    position: fixed; /* Fixa o header no topo da tela */
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000; /* Garante que fique acima dos outros elementos */
+    background: #171a20;
 }
 
+/* LOGO DO SITE */
 .logo {
     font-size: 25px;
     color: #fff;
@@ -37,16 +42,14 @@ header {
     text-shadow: 0 0 20px #0ef,
                  0 0 40px #0ef;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .logo span {
     color: #0ef;
 }
 
-header {
-    background: #171a20;
-}
-
+/* LINKS DO MENU DE NAVEGAÇÃO */
 .navbar a {
     font-size: 18px;
     color: #fff;
@@ -61,6 +64,7 @@ header {
     color: #0ef;
 }
 
+/* SEÇÃO HOME */
 .home {
     position: relative;
     width: 100%;
@@ -93,17 +97,17 @@ header {
 .home-img img {
     border-radius: 50%;
     max-width: 350px;
-    
     transform: scale(1.1);
 }
 
+/* SEÇÃO DE CURRÍCULO (RESUME) */
 .box-content {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-.content-img img{
+.content-img img {
     height: 48px;
     width: 48px;
 }
@@ -148,6 +152,7 @@ header {
     text-decoration: none;
 }
 
+/* LISTA DE HABILIDADES */
 div.resume-section.skills .list li {
     display: inline-block;
     font-size: smaller;
@@ -159,7 +164,7 @@ div.resume-section.skills .list li {
 
 div.resume-section.skills .list li:hover {
     background-color: #222;
-    color:#ddd;
+    color: #ddd;
     cursor: pointer;
 }
 
@@ -169,6 +174,7 @@ div.resume-section.skills .list li:hover {
     font-weight: 500;
 }
 
+/* EXPERIÊNCIAS PROFISSIONAIS */
 .experience-item {
     margin-bottom: 20px;
     padding: 15px;
@@ -206,10 +212,11 @@ div.resume-section.skills .list li:hover {
 
 .skills-list li:hover {
     background-color: #222;
-    color:#ddd;
+    color: #ddd;
     cursor: pointer;
 }
 
+/* SEÇÃO DE CONTATO */
 .contact {
     padding: 50px;
     background-color: #1f242d;
@@ -231,6 +238,7 @@ div.resume-section.skills .list li:hover {
     font-size: 1rem;
 }
 
+/* FORMULÁRIO DE CONTATO */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -265,6 +273,7 @@ div.resume-section.skills .list li:hover {
     background-color: #0056b3;
 }
 
+/* LINKS PARA REDES SOCIAIS */
 .social-links {
     margin-top: 20px;
 }
@@ -280,6 +289,7 @@ div.resume-section.skills .list li:hover {
     color: #0056b3;
 }
 
+/* CONTEÚDO */
 .card {
     width: 300px;
     border: 1px solid #ddd;
@@ -328,7 +338,18 @@ div.resume-section.skills .list li:hover {
     background-color: #0056b3;
 }
 
+/* FOOTER */
+footer {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    padding: 3px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -346,11 +367,6 @@ div.resume-section.skills .list li:hover {
     }
 
     .experience-item {
-        margin-bottom: 20px;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #f9f9f9;
         max-width: 180px;
     }
 

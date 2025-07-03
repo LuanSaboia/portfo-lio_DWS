@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <!-- Biblioteca EmailJS para envio de emails pelo formulário -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Script principal do site -->
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <a href="#" class="logo"><span>Port</span>folio.</a>
+
+        <!-- Menu de navegação -->
         <nav class="navbar">
             <a class="active" href="#">Home</a>
             <a href="#resume">Resume</a>
@@ -22,12 +27,15 @@
         </nav>
     </header>
 
+    <!-- Seção Home -->
     <section class="home">
         <div class="home-content">
             <h3>Olá, meu nome é</h3>
             <h2>Luan Saboia</h2>
-            <p>Tenho 23 anos. Moro em Crateús-CE. Cursando Análise e Desenvolvimento de Sistemas na Uninter. Missionário da Comunidade Católica Shalom. 
-                Designer Gráfico na Comunidade Católica Shalom.</p>
+            <p>
+                Tenho 23 anos. Moro em Crateús-CE. Cursando Análise e Desenvolvimento de Sistemas na Uninter.
+                Missionário da Comunidade Católica Shalom. Designer Gráfico na Comunidade Católica Shalom.
+            </p>
         </div>
 
         <div class="home-img">
@@ -35,48 +43,54 @@
         </div> 
     </section>
 
+    <!-- Seção de Resume -->
     <section id="resume">
         <h2>Resume</h2>
 
+        <!-- Informações de contato -->
         <div class="resume-section">
             <h3>Contato</h3>
             <p><strong>Endereço:</strong> Rua Dom Pedro II, 1400</p>
             <p><strong>Telefone:</strong> (88) 99342-8350</p>
             <p><strong>Email:</strong> <a href="mailto:luan.saboia@gmail.com">luan.saboia@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luan-bezerra"
-                    target="_blank">www.linkedin.com/in/luan-bezerra</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/luan-bezerra" target="_blank">www.linkedin.com/in/luan-bezerra</a></p>
         </div>
 
+        <!-- Seção Educacional -->
         <div class="resume-section">
             <h3>Educação</h3>
             <ul>
                 <li><strong>Curso Técnico em Informática</strong> - EEEP Manoel Mano (2016-2018)</li>
                 <li><strong>Bacharelado em Ciência da Computação</strong> - Universidade Federal do Ceará (2019)</li>
-                <li><strong>Tecnologo em Análise e Desenvolvimento de Sistemas</strong> - Uninter (2025)</li>
+                <li><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> - Uninter (2025)</li>
             </ul>
         </div>
 
+        <!-- Experiência profissional -->
         <div class="resume-section">
             <h3>Experiência Profissional</h3>
+
             <div class="box-content">
                 <div class="content-img">
                     <img src="./assets/ufc.jpg" alt="Logo Universidade Federal do Ceará">
                 </div>
+
                 <div class="experience-item">
                     <p><strong>Estagiário de TI</strong> - Universidade Federal do Ceará</p>
                     <div class="details">
                         <p class="desc">(ago de 2018 - dez de 2018 · 5 meses)</p>
                         Serviços realizados:
-                        <p>- Manunteção de computadores;</p>
-                        <p>- Serviços com rede de computadores (instalação de servidor, troca de cabos de rede,
-                            gerenciamento do servidor);</p>
+                        <p>- Manutenção de computadores;</p>
+                        <p>- Serviços com rede de computadores (instalação de servidor, troca de cabos de rede, gerenciamento do servidor);</p>
                         <p>- Manuseio do banco de dados do servidor via shell;</p>
                         <p>- Virtualização de máquinas;</p>
                         <p>- Operação de serviços de rede através do protocolo de rede SSH.</p>
                     </div>
+                    <!-- Botão que alterna visibilidade dos detalhes -->
                     <button class="btn-details">...ver mais</button>
                 </div>
             </div>
+
             <div class="box-content">
                 <div class="content-img">
                     <img src="./assets/ceara.jpg" alt="Logo Ceará Certificação">
@@ -96,6 +110,7 @@
                     <button class="btn-details">...ver mais</button>
                 </div>
             </div>
+
             <div class="box-content">
                 <div class="content-img">
                     <img src="./assets/fitbank.jpg" alt="Logo FitBank 450">
@@ -110,6 +125,7 @@
                     <button class="btn-details">...ver mais</button>
                 </div>
             </div>
+
             <div class="box-content">
                 <div class="content-img">
                     <img src="./assets/fitbank.jpg" alt="Logo FitBank 450">
@@ -119,11 +135,12 @@
                     <div class="details">
                         <p class="desc">(set de 2022 - fev de 2023 · 6 meses)</p>
                         Principais atividades:
-                        <p>Desenvolvimento de soluções, desenvolvimento e manutenção de funcionalidades de frontend e um pouco de backend, correção e manutenção de aplicações, contribuição em soluções escalonáveis e de alta performance, utilização de testes automátizados com Cypress.</p>
+                        <p>Desenvolvimento de soluções, desenvolvimento e manutenção de funcionalidades de frontend e backend, correção de bugs e aplicações escaláveis, testes automatizados com Cypress.</p>
                     </div>
                     <button class="btn-details">...ver mais</button>
                 </div>
             </div>
+
             <div class="box-content">
                 <div class="content-img">
                     <img src="./assets/aikont.jpg" alt="Logo Aikont">
@@ -133,13 +150,14 @@
                     <div class="details">
                         <p class="desc">(fev de 2023 - mai de 2023 · 4 meses)</p>
                         Principais atividades:
-                        <p>Desenvolvimento e manutenção de sistemas utilizando Angular, criação de CRUD's para aplicação da empresa, controle de código e versionamento com GitLab.</p>
+                        <p>Desenvolvimento e manutenção de sistemas utilizando Angular, criação de CRUDs para aplicação da empresa, versionamento com GitLab.</p>
                     </div>
                     <button class="btn-details">...ver mais</button>
                 </div>
             </div>
         </div>
 
+        <!-- Habilidades técnicas -->
         <div class="resume-section">
             <h3>Habilidades Técnicas</h3>
             <ul class="skills-list">
@@ -151,6 +169,8 @@
             </ul>
         </div>
 
+
+        <!-- Seção de projetos do portfólio -->
         <div id="portfolio" class="resume-section">
             <h3>Portfolio</h3>
             <div class="card">
@@ -163,23 +183,26 @@
         </div>
     </section>
 
+    <!-- Seção de contato com EmailJS -->
     <section id="contact" class="contact">
         <div class="contact-content">
             <h2>Contact</h2>
-    
+
+            <!-- Formulário com integração ao EmailJS -->
             <form id="contact-form" class="contact-form">
                 <label for="from_name">Nome</label>
                 <input type="text" id="name" name="from_name" placeholder="Seu nome" required>
-            
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="user_email" placeholder="Seu email" required>
-            
+
                 <label for="message">Mensagem</label>
                 <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
-            
+
                 <button type="submit">Enviar</button>
             </form>
-    
+
+            <!-- Links para redes sociais -->
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/luan-bezerra/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/LuanSaboia" target="_blank">GitHub</a>
@@ -187,13 +210,10 @@
             </div>
         </div>
     </section>
-    
 
-    <main>
-    </main>
-    <script src="script.js"></script>
-    
-    
+    <main></main>
+    <footer>
+        <p>&copy; 2025 Luan Saboia</p>
+    </footer>
 </body>
-
 </html>
